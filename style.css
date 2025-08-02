@@ -1,0 +1,103 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f2f7ff, #e0f0ff);
+  color: #222;
+  min-height: 100vh;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0051ff;
+}
+
+/* Form & Inputs */
+textarea, input {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+textarea:focus, input:focus {
+  border-color: #0051ff;
+  box-shadow: 0 0 8px #88bfff;
+  outline: none;
+}
+
+/* 3D Buttons */
+button {
+  background: linear-gradient(145deg, #4d8bff, #1e60ff);
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 16px;
+  font-weight: bold;
+  box-shadow: 0 8px 0 #1b4cc0;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 1rem;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 4px 0 #1b4cc0;
+}
+
+/* Output */
+.output {
+  margin-top: 2rem;
+  background: #f4faff;
+  border-left: 6px solid #1e60ff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px #a3d0ff;
+}
+
+/* Shake on Scroll */
+.shake-on-scroll {
+  animation: shake 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0px); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-1px); }
+  100% { transform: translateX(1px); }
+}
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
