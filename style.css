@@ -101,3 +101,45 @@ button:active {
     width: 100%;
   }
 }
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(145deg, #ffffff, #e6f0ff);
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0051ff;
+  text-shadow: 0 2px #aad4ff;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  background-color: #e0ebff;
+  box-shadow: 0 4px 8px rgba(0, 81, 255, 0.2);
+  color: #0051ff;
+}
